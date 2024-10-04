@@ -1,0 +1,2187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul>li>a {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 78px;
+    color: #085DDC;
+    max-width: 684px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #212125;
+    text-align: center;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* white */
+    color: #FFFFFF;
+}
+
+html,
+body {
+    background: #fff;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+}
+
+header {
+    background: #085DDC;
+    padding: 35px 0 45px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo_header {
+    width: 158px;
+    height: 38px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    max-width: 100%;
+    height: 572px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    object-fit: cover;
+}
+
+.about img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #085DDC;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+}
+
+#new {
+    padding: 60px 0 90px;
+}
+
+#new h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 40px;
+}
+
+.new {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hol_card {
+    display: block;
+    width: 318px;
+    max-width: 318px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 6px 4px 43.3px rgba(0, 0, 0, 0.25);
+}
+
+.hol_img {
+    height: 268px;
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.hol_img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.hol_name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px 13px;
+}
+
+.hol_name span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* txt black */
+    color: #212125;
+}
+
+.hol_name button {
+    width: 100%;
+    height: 80px;
+    background: #085DDC;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .wrapper {
+    padding: 0 !important;
+}
+
+footer {
+    padding: 40px 0 26px;
+    background: #085DDC;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 40px 0 26px;
+}
+
+.soc_link {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+#part {
+    padding: 60px 0;
+}
+
+.part {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.part_p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+}
+
+.part_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+    /* TOP SPEED */
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 12px;
+    height: 214px;
+    max-width: 460px;
+    /* #085DDC */
+    background: #085DDC;
+    /* #085DDC */
+    border: 1px solid #085DDC;
+    border-radius: 20px;
+    width: 100%;
+    min-width: 354px;
+}
+
+.about_us {
+    margin: 68px 0 50px;
+}
+
+.car_div {
+    display: flex;
+    gap: 48px;
+}
+
+#preim {
+    padding: 50px 0 80px;
+}
+
+#preim h2 {
+    padding-bottom: 68px;
+}
+
+.preim {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.preim_info .preim_box {
+    width: 339px;
+    height: 120px;
+    gap: 5px;
+}
+
+.preim_info .preim_box p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+}
+
+.preim_info .preim_box h6 {
+    font-size: 32px;
+    text-transform: none;
+}
+
+.preim_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px;
+    gap: 12px;
+    width: 339px;
+    height: 120px;
+    border: 1px solid #FFD61E;
+    border-radius: 20px;
+    width: 458px;
+    height: 218px;
+}
+
+.preim_info .preim_box.pr {
+    width: 23.333%;
+}
+
+.preim_info .preim_box.pr2 {
+    width: 32.333%;
+}
+
+.pr {
+    width: 32.333%;
+}
+
+.pr2 {
+    width: 49%;
+}
+
+.pr3 {
+    width: 100%;
+}
+
+.input_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.input_box {
+    width: 100%;
+    max-width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input_box label,
+.text_box label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    /* identical to box height */
+    /* grey */
+    color: #7B6D6D;
+}
+
+.input_box input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 36px 32px;
+    height: 92px;
+    border: 1px solid #C5C6CC;
+    border-radius: 12px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 20px;
+    /* white */
+}
+
+.car_img_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    margin: 40px 0 60px;
+}
+
+.adder_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.adder_img div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.text_box {
+    width: 100%;
+}
+
+.adder_img div {
+    position: relative;
+    width: 370px;
+    height: 264px;
+}
+
+.text_box textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 36px 32px;
+    height: 620px;
+    border: 1px solid #C5C6CC;
+    border-radius: 12px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 20px;
+    /* white */
+    width: 100%;
+    resize: none;
+}
+
+.add_car button {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    /* black */
+    color: #000000;
+    /* black */
+    border: 1px solid #000000;
+    /* Frame 11 */
+    /* Auto layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 539px;
+    height: 89px;
+    /* yellow */
+    background: #FFD61E;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.faq_container {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    border: 2px solid #FFD61E;
+    border-radius: 14px;
+}
+
+#catalog {
+    padding-bottom: 50px;
+}
+
+.catalog_content .faq-item {
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-shadow: 6px 4px 43.3px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(41, 41, 41, 0.08);
+    border-radius: 5px;
+}
+
+.faq-question {
+    padding: 15px 35px 15px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    /* yellow */
+}
+
+.faq-question p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 28px;
+    /* identical to box height, or 88% */
+    /* white */
+    color: #292929;
+}
+
+.faq-answer {
+    padding: 0 15px 45px 15px;
+    max-width: 90%;
+    display: none;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    color: #f0b600;
+}
+
+.toggle-icon {
+    transition: 0.3s ease;
+}
+
+.faq-question.active .toggle-icon {
+    transform: rotate(90deg);
+    transition: 0.3s ease;
+}
+
+#faq {
+    padding: 60px 0 20px;
+}
+
+#faq h2 {
+    color: #f0b600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.contact_h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#contact {
+    padding: 60px 0 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 48px;
+}
+
+.left_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text_box h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #C9C9C9;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.text_box h3 {
+    font-style: normal;
+    font-weight: 467;
+    font-size: 36px;
+    line-height: 61px;
+    text-transform: none;
+    color: #FFFFFF;
+    font-family: 'MyCustomFont';
+}
+
+.right_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#auth {
+    padding-bottom: 50px;
+}
+
+#auth h2 {
+    align-items: start;
+    justify-content: start;
+    margin: 0 0 20px 0;
+    text-align: start;
+}
+
+.auth {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left_auth {
+    width: 100%;
+    max-width: 796px;
+}
+
+.left_auth form,
+.consult form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.consult form p {
+    color: #7B6D6D;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form_input input,
+.form_input label,
+.form_input select {
+    width: 100%;
+}
+
+.form_input label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7B6D6D;
+}
+
+.form_input input,
+.form_input select {
+    display: flex;
+    align-items: center;
+    height: 92px;
+    border: 1px solid #C5C6CC;
+    border-radius: 12px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    justify-content: start;
+    line-height: 20px;
+    padding: 0 20px;
+}
+
+.form_input select option {
+    color: #000;
+}
+
+.auth_btn {
+    /* Frame 11 */
+    /* Auto layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 89px;
+    background: #FFD61E;
+    border-radius: 10px;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    /* black */
+    color: #000000;
+}
+
+.auth_btn_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 89px;
+    background: #080F33;
+    border-radius: 10px;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    /* black */
+    color: #fff;
+}
+
+.right_auth {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.filter-block {
+    color: #fff;
+}
+
+.catalog_title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.catalog_title h2 {
+    text-align: start;
+    margin: 0;
+    justify-content: start;
+    align-items: start;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 32px;
+    color: #000000;
+}
+
+.catalog_btn {
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    width: 444px;
+    height: 53px;
+    /* #FF0202 */
+    background: #085DDC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+}
+
+.catalog_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.catalog_container,
+.auto_rec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.catalog_content .faq-question,
+.catalog_content .faq_container {
+    max-width: 318px;
+    min-width: 318px;
+}
+
+.catalog_content .faq-answer {
+    padding-left: 20px;
+}
+
+.catalog_content .faq-question p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 100%;
+    /* identical to box height, or 32px */
+    letter-spacing: -0.05em;
+    color: #292929;
+}
+
+.price-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-range span {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #292929;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 20px */
+    letter-spacing: -0.05em;
+    color: #292929;
+}
+
+.year-checkboxes label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.faq-answer select,
+.faq-answer input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #292929;
+    background-color: #fff;
+    color: #292929;
+    height: 50px;
+}
+
+.faq-answer .year-checkboxes input {
+    border: 1px solid #292929;
+}
+
+.year-checkboxes label {
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #085DDC;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.year-checkboxes label input {
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.year-checkboxes input {
+    background-color: #292929;
+    /* Желтый фон при выборе */
+    border-color: #292929;
+    /* Желтая граница при выборе */
+}
+
+.year-checkboxes label {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    padding-left: 0;
+    /* identical to box height, or 20px */
+    letter-spacing: -0.05em;
+    color: #085DDC;
+}
+
+.year-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.catalog_container .car_card,
+.auto_rec .car_card {
+    height: 509px;
+    width: 318px;
+}
+
+.catalog_container .car_card .car_img,
+.auto_rec .car_card .car_img {
+    height: 250px;
+}
+
+.catalog_container .car_card .car_name,
+.auto_rec .car_card .car_name {
+    flex-direction: column;
+    height: 259px;
+    padding: 12px;
+    align-items: start;
+    justify-content: start;
+}
+
+.catalog_container .car_card .car_name h3,
+.auto_rec .car_card .car_name h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: normal;
+}
+
+.catalog_container .car_card .car_name .price,
+.auto_rec .car_card .car_name .price {
+    margin-top: 20px;
+}
+
+.car_name p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+    letter-spacing: -0.05em;
+    color: #C6C6C6;
+    margin-top: 16px;
+}
+
+.krosh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 40px;
+}
+
+.krosh a {
+    color: #085DDC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    /* yellow */
+    background: transparent;
+    border: 3px solid #085DDC;
+    border-radius: 50px;
+}
+
+.krosh .active {
+    background: #085DDC;
+    color: #fff;
+}
+
+#auto_rec {
+    padding: 0 0 40px 0;
+}
+
+.auto_rec {
+    margin-top: 40px;
+}
+
+#auto_rec h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 78px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+}
+
+#info_card {
+    padding: 50px 0;
+}
+
+.info_card {
+    display: flex;
+    gap: 200px;
+}
+
+.car_card_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_info_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 366px;
+    gap: 30px;
+}
+
+.title_info_card h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    /* txt black */
+    color: #212125;
+}
+
+.title_info_card p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+    text-align: center;
+    /* txt black */
+    color: #212125;
+}
+
+.title_info_card .btn_in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 79px;
+    /* #FF0202 */
+    background: #085DDC;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+}
+
+.flex_info_card {
+    display: flex;
+    gap: 20px;
+}
+
+.myTwoSwiper {
+    max-width: 440px;
+    margin: 0;
+}
+
+.car_info_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.car_info_card h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    line-height: normal;
+}
+
+.car_info_card h2 {
+    line-height: normal;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+}
+
+.car_info_card p {
+    margin-bottom: 60px;
+    line-height: normal;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.car_info_card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    gap: 20px;
+    /* yellow */
+    border: 2px solid #FFD61E;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.add_catalog {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input_box_catalog {
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+.input_box_catalog label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    /* grey */
+    color: #7B6D6D;
+}
+
+.input_box_catalog input {
+    /* Field */
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 36px 32px;
+    gap: 8px;
+    width: 674px;
+    height: 92px;
+    border: 1px solid #C5C6CC;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 20px;
+    /* identical to box height, or 62% */
+    display: flex;
+    align-items: center;
+    /* #FF0202 */
+    color: #085DDC;
+}
+
+#add_catalog {
+    padding: 50px 0;
+}
+
+.add_catalog {
+    margin-top: 30px;
+}
+
+.add_img_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+}
+
+.h22 {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.form {
+    max-width: 675px;
+}
+
+.form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hol_flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+#comparison {
+    padding: 50px 0;
+}
+
+#comparison h2 {
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+#comparison h4 {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 467;
+    font-size: 32px;
+    line-height: 54px;
+    color: #000000;
+}
+
+.table_com {
+    display: flex;
+    flex-direction: column;
+    max-width: 1576px;
+    padding: 0 30px;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.t_line {
+    padding: 20px 0;
+    border-bottom: 1px solid #CECECE;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.names_flex {
+    display: flex;
+    align-items: center;
+}
+
+.name_line {
+    width: 343px;
+}
+
+.name_line_center {
+    text-align: center;
+}
+
+.name_line_right {
+    text-align: right;
+}
+
+.names_flex p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.name_line_title h4 {
+    margin: 0 !important;
+    max-width: 196px;
+    min-width: 196px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 467;
+    font-size: 32px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* #FF0202 */
+    color: #085DDC !important;
+}
+
+#basket {
+    padding: 50px 0;
+}
+
+#basket h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 120%;
+    /* identical to box height, or 54px */
+    /* txt black */
+    color: #212125;
+    max-width: 800px;
+}
+
+.basket {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basket_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.basket_card {
+    min-height: 200px;
+    /* #FF0202 */
+    background: #085DDC;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 85px 5px 5px;
+    width: 90%;
+}
+
+.basket_info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.basket_cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.basket_img {
+    height: 194px;
+    width: 184px;
+}
+
+.basket_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.basket_parametr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.parametr {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.parametr p {
+    min-width: 86px;
+}
+
+.parametr_price {
+    margin-top: px;
+}
+
+.parametr_price p {
+    line-height: normal;
+}
+
+.basket_sum {
+    display: flex;
+    gap: 115px;
+    align-items: center;
+}
+
+.sum {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sum button {
+    width: 50px;
+    height: 50px;
+    /* white txt */
+    border: 1px solid #FAFBFD;
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.sum span {
+    color: #fff;
+    font-size: 32px;
+}
+
+.itog {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.itog p {
+    color: #292929;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.itog button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 120px;
+    gap: 10px;
+    width: 440px;
+    height: 79px;
+    /* #FF0202 */
+    background: #085DDC;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+}
+
+#lk {
+    padding: 50px 0;
+}
+
+#lk h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 120%;
+    color: #212125;
+    text-align: center;
+}
+
+.lk {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.lk_flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.lk_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 60px;
+    width: 100%;
+    /* #FF0202 */
+    background: #085DDC;
+    /* Input/Default */
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.lk_card {
+    max-width: 684px;
+    min-height: 282px;
+}
+
+.lk_box h4 {
+    color: #fff !important;
+}
+
+.lk_card_info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lk_card_info h6 {
+    /* Юлия В */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 120%;
+}
+
+.lk_info_flex {
+    display: flex;
+    gap: 20px;
+}
+
+.lk_info {
+    gap: 20px;
+}
+
+.data p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.data h4 {
+    max-width: 196px;
+    min-width: 196px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+    font-weight: 467;
+    font-size: 28px;
+    line-height: 54px;
+    display: flex;
+    /* #FF0202 */
+    color: #085DDC !important;
+}
+
+.parametr_card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#reviev {
+    padding: 50px 0;
+}
+
+.reviev_flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.reviev h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.reviev form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.reviev form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    /* grey */
+    color: #7B6D6D;
+}
+
+.reviev form input {
+    /* Field */
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 36px 32px;
+    gap: 8px;
+    width: 100%;
+    max-width: 1048px;
+    height: 92px;
+    border: 1px solid #C5C6CC;
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #085DDC;
+}
+
+.reviev form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 440px;
+    height: 79px;
+    /* #FF0202 */
+    background: #085DDC;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.reviev_case {
+    width: 48%;
+}
+
+.comment {
+    /* Group 4150 */
+    width: 100%;
+    min-height: 180px;
+    /* #FF0202 */
+    background: #085DDC;
+    /* Input/Default */
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border-radius: 20px;
+    padding: 20px 50px 20px 20px;
+    margin-top: 10px;
+}
+
+.reviev_case h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    /* identical to box height, or 83% */
+    /* Neutral/800 */
+    color: #170F49;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.comment p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+@media (max-width:1280px) {
+    .part {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .part_box {
+        max-width: 48%;
+        min-width: 354px;
+    }
+    .part_box2 {
+        max-width: 100%;
+    }
+    .info_card {
+        gap: 30px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:1175px) {
+    .car_card_info {
+        flex-direction: column-reverse;
+        gap: 60px !important;
+    }
+    .info_card {
+        gap: 30px;
+        justify-content: start;
+    }
+    .title_info_card {
+        max-width: unset;
+    }
+    .title_info_card .btn_in {
+        max-width: 366px;
+    }
+}
+
+@media (max-width:1440px) {
+    .about {
+        height: auto;
+    }
+    .table_com {
+        margin: 0 auto;
+    }
+    .t_line {
+        gap: 20px;
+    }
+    .name_line {
+        width: 100%;
+        max-width: 343px;
+    }
+    .names_flex {
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width:1030px) {
+    .footer ul {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .hol_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1070px) {
+    .t_line {
+        flex-direction: column;
+    }
+    .name_line_title h4 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:830px) {
+    .names_flex p {
+        font-size: 18px;
+    }
+    .name_line_title h4 {
+        font-size: 18px !important;
+    }
+    .reviev_case {
+        width: 100%;
+    }
+}
+
+@media (max-width:510px) {
+    .names_flex p {
+        font-size: 14px;
+    }
+    .name_line_title h4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1170px) {
+    .add_catalog {
+        flex-direction: column;
+    }
+    .form,
+    .input_box_catalog input {
+        width: 100%;
+        max-width: unset;
+    }
+    .search {
+        width: 140px;
+    }
+    .add_img {
+        width: 100%;
+        height: 553px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .car_img_content {
+        gap: 20px;
+    }
+    .add_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .adder_img div {
+        max-width: 318px;
+        height: 264px;
+    }
+    .adder_img div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .car_img_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .input_box {
+        max-width: 48%;
+    }
+    .car_card_info {
+        flex-direction: column-reverse;
+    }
+    .preim_info .preim_box.pr {
+        width: 48.333%;
+    }
+    .preim_info .preim_box.pr2 {
+        width: 100%;
+    }
+    .left_car {
+        width: 38%;
+        height: 503px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .right_car {
+        width: 58%;
+        height: 503px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .car_div img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .car_div {
+        gap: 20px;
+    }
+    .preim_box_onn .preim_box {
+        width: 45%;
+        height: 340px !important;
+    }
+    .auth {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:1075px) {
+    .last {
+        display: block;
+    }
+}
+
+@media (min-width:768px) and (max-width:1430px) {
+    ul>li>a {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 64px;
+        line-height: 78px;
+        max-width: 684px;
+    }
+    .header ul {
+        gap: 20px;
+    }
+    .wrapper {
+        padding: 0 20px;
+    }
+    .logo_header img {
+        height: 34px;
+        width: 137px;
+    }
+    .new {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .footer ul li a {
+        font-size: 32px;
+    }
+    .car_img_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .adder_img {
+        max-width: 90%;
+        justify-content: center;
+    }
+    .car_card_info {
+        gap: 20px;
+    }
+    .preim_info .preim_box.pr2 {
+        width: 31.333%;
+    }
+    .preim_info .preim_box.pr2 {
+        height: 150px;
+    }
+    .preim_info .preim_box h6 {
+        line-height: normal;
+    }
+    .auto_rec {
+        justify-content: center;
+    }
+    .last {
+        display: none;
+    }
+    .auto_rec .car_card {
+        min-width: 318px;
+    }
+    .preim_box_onn .preim_box {
+        width: 49%;
+    }
+    .left_car {
+        width: 40%;
+        height: 503px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .right_car {
+        width: 60%;
+        height: 503px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .car_div img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .left_contact {
+        gap: 30px;
+    }
+    .catalog_container {
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    #catalog {
+        padding-top: 50px;
+    }
+    ul>li>a {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 78px;
+        max-width: 684px;
+        line-height: normal;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header ul {
+        gap: 16px;
+    }
+    .wrapper {
+        padding: 0 18px;
+    }
+    .new {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    #new {
+        padding: 40px 0;
+    }
+    #new h2 {
+        margin-bottom: 20px;
+    }
+    .footer {
+        align-items: center;
+    }
+    .footer ul li a {
+        font-size: 32px;
+    }
+    .footer ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header ul {
+        display: none;
+    }
+    .part_box {
+        width: 100%;
+        max-width: unset;
+    }
+    .car_card {
+        display: block;
+        width: 320px;
+        max-width: 320px;
+        height: 457px;
+    }
+    .car_img {
+        height: 300px;
+    }
+    .car_name {
+        height: 158px;
+    }
+    .footer ul li a {
+        font-size: 32px;
+    }
+    .footer ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about a {
+        font-size: 26px;
+        width: 100%;
+    }
+    .about a img {
+        width: 45px;
+    }
+    .header ul {
+        display: none;
+    }
+    .mySwiper .swiper-pagination {
+        display: none;
+    }
+    .catalog_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalog_btn_none {
+        display: flex;
+    }
+    .catalog_title {
+        justify-content: center;
+    }
+    .catalog_title h2 {
+        display: none;
+    }
+    .ct_content {
+        align-items: center;
+        justify-content: center;
+    }
+    .catalog_container {
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .input_box {
+        max-width: 100%;
+    }
+    .add_car button {
+        width: 100%;
+        font-size: 24px;
+    }
+    .adder_img div {
+        width: 100%;
+        max-width: unset;
+    }
+    .car_info_card a {
+        width: 100%;
+        font-size: 24px;
+        line-height: 55px;
+    }
+    .car_info_card h1,
+    .car_info_card h2 {
+        font-size: 40px;
+    }
+    .myTwoSwiper img {
+        width: 100%;
+        height: 100%;
+    }
+    .auto_rec {
+        align-items: center;
+        justify-content: center;
+    }
+    .car_card_info {
+        gap: 50px;
+    }
+    .preim_info .preim_box.pr {
+        width: 100%;
+    }
+    .preim_info .preim_box.pr2 {
+        height: 150px;
+    }
+    .preim_info .preim_box h6 {
+        line-height: normal;
+    }
+    .about_us h4 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .about_us {
+        margin-top: 30px;
+    }
+    .car_div {
+        flex-direction: column;
+    }
+    .left_car {
+        width: 100%;
+        height: 503px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .right_car {
+        width: 100%;
+        height: 503px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .preim_box_onn .preim_box {
+        width: 100%;
+        height: auto !important;
+    }
+    .faq-question p {
+        font-size: 22px;
+    }
+    #faq h2 {
+        display: none;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .left_contact {
+        gap: 30px;
+    }
+    .text_box h3 {
+        font-size: 28px;
+    }
+    #contact {
+        padding-top: 20px;
+    }
+    .auth_btn,
+    .auth_btn_two {
+        font-size: 28px;
+        width: 100%;
+    }
+    .right_auth img {
+        width: 100%;
+    }
+    .info_card {
+        flex-direction: column;
+    }
+    .reviev form button {
+        width: 100%;
+        max-width: 366px;
+    }
+}

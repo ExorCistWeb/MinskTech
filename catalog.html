@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinskTech</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header">
+                <a class="logo_header" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <ul>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Сравнение</a></li>
+                    <li><a href="">Корзина</a></li>
+                    <li><a href="">Личный кабинет</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <section id="catalog">
+        <div class="wrapper">
+            <div class="catalog">
+                <div class="catalog_title">
+                    <h2 class="h2">Фильр по парамерам</h2>
+                    <a class="catalog_btn" href="">Добавить товар в каталог</a>
+                </div>
+                <div class="catalog_content">
+
+                    <div class="faq_container">
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Цена</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <input type="range" id="price-max" min="2000" max="10000" value="10000" oninput="updatePrice()">
+                                <div class="price-range">
+                                    <span id="price-min-value">2000</span> — <span id="price-max-value">10000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Бренд</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <select id="brand">
+                                    <option value="">Выберите Бренд</option>
+                                    <option value="brand1">Бренд 1</option>
+                                    <option value="brand2">Бренд 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Глубина, см</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <select id="body-type">
+                                <option value="">Глубина, см</option>
+                                <option value="sedan">50</option>
+                                <option value="suv">100</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Скорость отжима</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <select id="body-type">
+                                <option value="">Скорость отжима</option>
+                                <option value="sedan">50</option>
+                                <option value="suv">100</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Страна</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <select id="body-type">
+                                <option value="">Выберите страну</option>
+                                <option value="sedan">Китай</option>
+                                <option value="suv">Япония</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Ширина, см</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <select id="body-type">
+                                <option value="">Ширина, см</option>
+                                <option value="sedan">50</option>
+                                <option value="suv">100</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Год выхода</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="year-checkboxes">
+                                    <label>2019<input type="checkbox" value="2019"> </label>
+                                    <label>2020<input type="checkbox" value="2020"> </label>
+                                    <label>2021<input type="checkbox" value="2021" checked> </label>
+                                    <label>2022<input type="checkbox" value="2022" checked> </label>
+                                    <label>2023<input type="checkbox" value="2023"> </label>
+                                    <label>2024<input type="checkbox" value="2024" checked> </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Цвет</p>
+                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                            </div>
+                            <div class="faq-answer">
+                                <select id="fuel-type">
+                                    <option value="">Выберите цвет</option>
+                                    <option value="petrol">Белый</option>
+                                    <option value="diesel">Черный </option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ct_content">
+                        <div class="catalog_container">
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                            <a class="hol_card" href="">
+                                <div class="hol_img">
+                                    <img src="img/hol1.svg" alt="">
+                                </div>
+                                <div class="hol_name">
+                                    <span class="price">1000р</span>
+                                    <h3>Холодильник Haier C2F636CWRGU1</h3>
+                                    <button>В карзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="krosh">
+                            <a class="active" href="">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="footer">
+                <a href=""><img src="img/logo.svg" alt=""></a>
+                <ul>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <div class="soc_link">
+                    <a href=""><img src="img/inst.svg" alt=""></a>
+                    <a href=""><img src="img/yt.svg" alt=""></a>
+                    <a href=""><img src="img/tg.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
