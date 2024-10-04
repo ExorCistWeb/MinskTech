@@ -1758,6 +1758,9 @@ footer .wrapper {
         gap: 20px;
         width: 100%;
     }
+    .lk_info_flex {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:1030px) {
@@ -1886,6 +1889,13 @@ footer .wrapper {
     .last {
         display: block;
     }
+    .lk_flex {
+        flex-direction: column;
+    }
+    .lk_card {
+        max-width: unset;
+        width: 100%;
+    }
 }
 
 @media (min-width:768px) and (max-width:1430px) {
@@ -1975,6 +1985,31 @@ footer .wrapper {
 }
 
 @media (max-width:768px) {
+    #auto_rec h4,
+    .lk_card_info h6 {
+        font-size: 32px;
+    }
+    #lk h4 {
+        font-size: 38px;
+    }
+    .lk_info_flex {
+        justify-content: center;
+    }
+    .basket_card {
+        padding-right: 10px;
+    }
+    .basket_sum {
+        gap: 20px
+    }
+    .basket_img {
+        min-width: 154px;
+    }
+    .basket_card {
+        width: 100%;
+    }
+    .delete {
+        display: none;
+    }
     #catalog {
         padding-top: 50px;
     }
@@ -2183,5 +2218,25 @@ footer .wrapper {
     .reviev form button {
         width: 100%;
         max-width: 366px;
+    }
+}
+
+@media (max-width:925px) {
+    .basket_cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .basket_sum {
+        flex-direction: column;
+    }
+    .basket_img {
+        min-width: 100px;
+    }
+    .itog button {
+        width: 100%;
+        padding: 0;
     }
 }
