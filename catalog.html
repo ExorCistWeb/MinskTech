@@ -33,120 +33,102 @@
                     <a class="catalog_btn" href="">Добавить товар в каталог</a>
                 </div>
                 <div class="catalog_content">
+                    <div class="filter-popup">
+                        <button id="filter-button">Показать фильтры</button>
+                        <div class="popup_content" id="popup_content">
+                            <div class="faq_container">
 
-                    <div class="faq_container">
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Цена</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <input type="range" id="price-max" min="2000" max="10000" value="10000" oninput="updatePrice()">
-                                <div class="price-range">
-                                    <span id="price-min-value">2000</span> — <span id="price-max-value">10000</span>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <p>Цена</p>
+                                        <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <input type="range" id="price-max" min="2000" max="10000" value="10000" oninput="updatePrice()">
+                                        <div class="price-range">
+                                            <span id="price-min-value">2000</span> — <span id="price-max-value">10000</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Бренд</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <select id="brand">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <p>Бренд</p>
+                                        <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <select id="brand">
                                     <option value="">Выберите Бренд</option>
                                     <option value="brand1">Бренд 1</option>
                                     <option value="brand2">Бренд 2</option>
                                 </select>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Глубина, см</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <select id="body-type">
-                                <option value="">Глубина, см</option>
-                                <option value="sedan">50</option>
-                                <option value="suv">100</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Скорость отжима</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <select id="body-type">
-                                <option value="">Скорость отжима</option>
-                                <option value="sedan">50</option>
-                                <option value="suv">100</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Страна</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <select id="body-type">
-                                <option value="">Выберите страну</option>
-                                <option value="sedan">Китай</option>
-                                <option value="suv">Япония</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Ширина, см</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <select id="body-type">
-                                <option value="">Ширина, см</option>
-                                <option value="sedan">50</option>
-                                <option value="suv">100</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Год выхода</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <div class="year-checkboxes">
-                                    <label>2019<input type="checkbox" value="2019"> </label>
-                                    <label>2020<input type="checkbox" value="2020"> </label>
-                                    <label>2021<input type="checkbox" value="2021" checked> </label>
-                                    <label>2022<input type="checkbox" value="2022" checked> </label>
-                                    <label>2023<input type="checkbox" value="2023"> </label>
-                                    <label>2024<input type="checkbox" value="2024" checked> </label>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <p>Цвет</p>
-                                <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
-                            </div>
-                            <div class="faq-answer">
-                                <select id="fuel-type">
-                                    <option value="">Выберите цвет</option>
-                                    <option value="petrol">Белый</option>
-                                    <option value="diesel">Черный </option>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <p>Глубина, см</p>
+                                        <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <select id="depth">
+                                    <option value="">Глубина, см</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
                                 </select>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <p>Скорость отжима</p>
+                                        <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <select id="spin-speed">
+                                    <option value="">Скорость отжима</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <p>Страна</p>
+                                        <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <select id="country">
+                                    <option value="">Выберите страну</option>
+                                    <option value="china">Китай</option>
+                                    <option value="japan">Япония</option>
+                                </select>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <p>Ширина, см</p>
+                                        <span class="toggle-icon"><img src="img/filt.png" alt=""></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <select id="width">
+                                    <option value="">Ширина, см</option>
+                                    <!-- Добавьте нужные опции -->
+                                </select>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-
+                        <!-- .catalog_content -->
                     </div>
+                    <!-- .popup-content -->
+
+                    <!-- .faq_container -->
+
+
 
                     <div class="ct_content">
                         <div class="catalog_container">

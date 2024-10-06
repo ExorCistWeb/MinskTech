@@ -11,6 +11,71 @@
 </head>
 
 <body>
+    <div class="popup" id="login-popup">
+        <div class="popup-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Вход в аккаунт</h2>
+            <form action="">
+                <div class="input_box">
+                    <label for="">Gmail</label>
+                    <input type="email" required>
+                </div>
+                <div class="input_box">
+                    <label for="">Пароль</label>
+                    <input type="password" required>
+                </div>
+                <button id="login-submit">Войти</button>
+            </form>
+
+            <p>Нет аккаунта? - <button id="open-register">Зарегистрироваться</button></p>
+        </div>
+    </div>
+
+    <!-- Попап Регистрация -->
+    <div class="popup" id="register-popup">
+        <div class="popup-content">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Зарегистрируйтесь</h2>
+            <form action="">
+                <div class="input_box">
+                    <label for="">Имя</label>
+                    <input type="text" required>
+                </div>
+                <div class="input_box">
+                    <label for="">Фамилия</label>
+                    <input type="text" required>
+                </div>
+                <div class="input_box">
+                    <label for="">Gmail</label>
+                    <input type="email" required>
+                </div>
+                <div class="input_box">
+                    <label for="">Номер телефона</label>
+                    <input type="tel" required>
+                </div>
+                <button id="register-submit">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <button id="open-login-from-register">Войти</button></p>
+        </div>
+    </div>
+
+    <!-- Попап Подтверждение кода -->
+    <div class="popup" id="confirm-popup">
+        <div class="popup-content">
+            <span class="close" id="close-confirm">&times;</span>
+            <h2>Подтверждение кода</h2>
+            <form action="">
+                <div class="input_box">
+                    <label for="">Введите код подтверждения</label>
+                    <input type="text" required>
+                </div>
+
+                <button id="confirm-submit">Подтвердить</button>
+            </form>
+
+            <p><a href="#">Повторить отправку кода</a></p>
+        </div>
+    </div>
     <header>
         <div class="wrapper">
             <div class="header">
@@ -19,7 +84,8 @@
                     <li><a href="">Каталог</a></li>
                     <li><a href="">Сравнение</a></li>
                     <li><a href="">Корзина</a></li>
-                    <li><a href="">Личный кабинет</a></li>
+                    <!-- <li><a href="">Личный кабинет</a></li> -->
+                    <li><button id="open-login">Авторизация</button></li>
                 </ul>
 
             </div>
@@ -226,6 +292,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
